@@ -3,6 +3,16 @@
   src: url(./fonts/proximanova_bold.otf);
   font-weight: 700;
 }
+@font-face {
+  font-family: "Nova";
+  src: url(./fonts/proximanova_regular.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Nova";
+  src: url(./fonts/proximanova_light.otf);
+  font-weight: 300;
+}
 html,
 body {
   position: relative;
@@ -19,7 +29,9 @@ body {
   margin: 0;
   padding: 0;
 }
-
+.wrapper {
+  background: #162831;
+}
 .swiper {
   width: 100%;
   padding-top: 50px;
@@ -36,17 +48,25 @@ body {
   height: 300px;
 }
 .reviews__swiper-slide {
-  width: 636px;
-  height: 350px;
   border-radius: 10px;
   background: #018abe;
   padding: 50px 60px 56px 60px;
+}
+.reviews-card {
+  width: 516px;
+  /* height: 100%; */
 }
 .reviews-card__title {
   font-size: 20px;
   font-weight: 700;
   line-height: 28px;
   color: #ffffff;
+  margin: 0 0 20px 0;
+}
+.reviews-card__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .reviews-card__text-part {
   font-size: 14px;
