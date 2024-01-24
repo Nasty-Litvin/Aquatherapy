@@ -35,7 +35,6 @@ body {
   font-family: "Proxima Nova";
   color: #ffffff;
   background: #162831;
-
 }
 @font-face {
   font-family: "Nova";
@@ -52,6 +51,16 @@ body {
   src: url(./fonts/proximanova_light.otf);
   font-weight: 300;
 }
+@font-face {
+  font-family: "El Messiri";
+  src: url(./fonts/ElMessiri/ElMessiri-Bold.ttf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: "El Messiri";
+  src: url(./fonts/ElMessiri/ElMessiri-Regular.ttf);
+  font-weight: 400;
+}
 body {
   background: #eee;
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -62,8 +71,6 @@ body {
 }
 .wrapper {
   background: #162831;
-
-
 }
 /*------header------*/
 .header__container {
@@ -71,6 +78,7 @@ body {
   justify-content: space-between;
   align-items: center;
   max-width: 1296px;
+  padding: 30px 0 50px 0;
   margin: 0 auto;
 }
 .logo {
@@ -85,7 +93,6 @@ body {
 .menu__list {
   display: flex;
   justify-content: space-between;
-  /* align-items: center; */
 }
 
 .menu__link {
@@ -107,6 +114,77 @@ body {
 
 .header__button {
   background: #018abe;
+  color: #ffffff;
+}
+/*------health-promotion------*/
+.health-promotion__container {
+  background: url(./img/health-promotion.png) no-repeat;
+  max-width: 1296px;
+  height: 600px;
+  margin: 0 auto;
+}
+
+.health-promotion__title {
+  font-family: "El Messiri";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 34px;
+  color: #ffffff;
+}
+.health-promotion__title::before {
+  content: "";
+  width: 28px;
+  height: 14px;
+
+  color: #ffffff;
+}
+.health-promotion__subtitle {
+  /* display: flex;
+  flex-wrap: wrap; */
+  max-width: 587px;
+  font-family: "El Messiri";
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 90px;
+  color: #ffffff;
+}
+.reviews {
+}
+.reviews__title {
+  max-width: 300px;
+}
+.title {
+
+}
+.title::before {
+  content: "";
+  position: absolute;
+  top: 30%;
+  left: 0;
+  width: 28px;
+  height: 14px;
+  border-radius: 0 50px 0 50px;
+  background: #018abe;
+}
+.title::after {
+  content: "";
+  position: absolute;
+  top: 30%;
+  right: 0;
+  width: 28px;
+  height: 14px;
+  border-radius: 50px 0 50px 0;
+  background: #018abe;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  font-family: "El Messiri";
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 59px;
   color: #ffffff;
 }
 
