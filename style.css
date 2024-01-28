@@ -32,8 +32,8 @@ body {
   height: 100%;
   line-height: 1;
   position: relative;
-  font-family: "Proxima Nova";
-  color: #ffffff;
+  /* font-family: "Proxima Nova"; */
+  /* color: #ffffff; */
   background: #162831;
 }
 @font-face {
@@ -145,6 +145,7 @@ body {
 .header__button {
   background: #018abe;
   color: #ffffff;
+  cursor: pointer;
 }
 /*------health-promotion------*/
 .health-promotion__container {
@@ -201,7 +202,7 @@ body {
   margin: 40px 0 0 0;
 }
 /*------sessions------*/
-.sesssions__container {
+.sessions__container {
   max-width: 1296px;
   padding: 150px 0 0 0;
   margin: 0 auto;
@@ -225,6 +226,7 @@ body {
   grid-row: 1/3;
 }
 .grid-body__title {
+  max-width: 336px;
   font-family: "El Messiri";
   font-size: 24px;
   font-weight: 700;
@@ -232,7 +234,6 @@ body {
   padding: 0 40px 30px 40px;
   color: #ffffff;
 }
-
 /*-----reviews-------*/
 .reviews__container {
   padding: 150px 0 0 0;
