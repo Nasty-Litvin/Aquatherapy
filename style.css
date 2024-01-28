@@ -37,17 +37,17 @@ body {
   background: #162831;
 }
 @font-face {
-  font-family: "Nova";
+  font-family: "Proxima Nova";
   src: url(./fonts/proximanova_bold.otf);
   font-weight: 700;
 }
 @font-face {
-  font-family: "Nova";
+  font-family: "Proxima Nova";
   src: url(./fonts/proximanova_regular.ttf);
   font-weight: 400;
 }
 @font-face {
-  font-family: "Nova";
+  font-family: "Proxima Nova";
   src: url(./fonts/proximanova_light.otf);
   font-weight: 300;
 }
@@ -225,14 +225,14 @@ body {
   grid-row: 1/3;
 }
 .grid-body__title {
-
   font-family: "El Messiri";
   font-size: 24px;
   font-weight: 700;
   line-height: 34px;
   padding: 0 40px 30px 40px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
+
 /*-----reviews-------*/
 .reviews__container {
   padding: 150px 0 0 0;
@@ -278,10 +278,60 @@ body {
   line-height: 20px;
   color: #ffffff;
 }
+/*--------about-------*/
+.about__container {
+  max-width: 1296px;
+  padding: 150px 110px 0 110px;
+  margin: 0 auto;
+}
+.about__title {
+  width: 389px;
+}
+.about__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 100px 0 0 0;
+}
+.about-reverse {
+  flex-direction: row-reverse;
+}
+.about__text-card {
+  width: 466px;
+}
+.about__image {
+  width: 526px;
+  height: 365px;
+}
+.about__image img {
+  width: 100%;
+  height: 100%;
+}
+.card__title {
+  font-family: "Proxima Nova";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 34px;
+  color: #ffffff;
+  margin: 0 0 30px 0;
+}
+.card__subtitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: "Proxima Nova";
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 22px;
+  color: #ffffff;
+}
+.card__subtitle > * {
+  margin-bottom: 30px;
+}
 /*------cost-sessions------*/
 .cost-sessions__container {
   max-width: 1296px;
-  padding: 150px 110px 50px 0;
+  padding: 150px 110px 0px 110px;
   margin: 0 auto;
 }
 
@@ -301,6 +351,10 @@ body {
 }
 .costs__card {
   display: flex;
+  align-items: center;
+}
+.costs__card > * {
+  margin: 0 0 30px 0;
 }
 .costs__title {
   position: relative;
@@ -309,8 +363,10 @@ body {
   font-weight: 400;
   line-height: 25px;
   color: #ffffff;
+  padding: 0 0 0 38px;
+  width: 268px;
 }
-.costs__title::after {
+.costs__title::before {
   content: "";
   position: absolute;
   top: 30%;
@@ -318,7 +374,7 @@ body {
   width: 18px;
   height: 9px;
   border-radius: 0 50px 0 50px;
-  color: #018abe;
+  background: #018abe;
 }
 .costs__price {
   font-family: "El Messiri";
@@ -345,4 +401,108 @@ body {
   color: #ffffff;
   margin: 30px 0 0 0;
 }
-/*-----------------------*/
+/*--------map---------*/
+.map__container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1296px;
+  padding: 150px 0 90px 0;
+  margin: 0 auto;
+}
+.map__content {
+  width: 856px;
+  height: 604px;
+  border-radius: 10px;
+}
+.map__cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.map__card-map {
+  width: 392px;
+  height: 290px;
+  border-radius: 10px;
+  background: #018abe;
+  padding: 35px 45px 35px 45px;
+}
+.card-map__title {
+  font-family: "El Messiri";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 34px;
+  color: #ffffff;
+}
+.card-map__list > * {
+  margin: 20px 0 0 0;
+}
+.card-map__item {
+  position: relative;
+  font-family: "Proxima Nova";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+  color: #ffffff;
+  padding: 0 0 0 40px;
+}
+.address::before {
+  content: "";
+  background: url(./img/icons/address.svg) no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+}
+.metro::before {
+  content: "";
+  background: url(./img/icons/metro.svg) no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+}
+.record::before {
+  content: "";
+  background: url(./img/icons/record.svg) no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+}
+.card-map__button {
+  width: 155px;
+  height: 36px;
+  border-radius: 3px;
+  background: #ffffff;
+  font-family: "Proxima Nova";
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 18px;
+  color: #018abe;
+  margin: 30px 0 0 0;
+}
+/*------footer-------*/
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1296px;
+  padding: 0px 0 30px 0;
+  margin: 0 auto;
+}
+.years {
+  font-family: "Proxima Nova";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+  color: #ffffff;
+}
+.copyright {
+  font-family: "Proxima Nova";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 19px;
+  color: #ffffff;
+}
