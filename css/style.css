@@ -1,0 +1,441 @@
+.wrapper {
+  background: #162831;
+}
+/*-------title-----*/
+.title-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  font-family: "El Messiri";
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 59px;
+  color: #ffffff;
+}
+.title::before {
+  content: "";
+  position: absolute;
+  top: 30%;
+  left: 0;
+  width: 28px;
+  height: 14px;
+  border-radius: 0 50px 0 50px;
+  background: #018abe;
+}
+.title::after {
+  content: "";
+  position: absolute;
+  top: 30%;
+  right: 0;
+  width: 28px;
+  height: 14px;
+  border-radius: 50px 0 50px 0;
+  background: #018abe;
+}
+/*------header------*/
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1296px;
+  padding: 30px 0 50px 0;
+  margin: 0 auto;
+}
+.logo {
+  width: 60px;
+}
+.menu {
+  width: 655px;
+}
+.menu__list {
+  display: flex;
+  justify-content: space-between;
+}
+.menu__link {
+  font-family: "Proxima Nova";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+  color: #ffffff;
+}
+.button {
+  width: 155px;
+  height: 36px;
+  border-radius: 3px;
+  padding: 9px 10px 9px 10px;
+  font-family: "Proxima Nova";
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 18px;
+}
+.header__button {
+  background: #018abe;
+  color: #ffffff;
+  cursor: pointer;
+}
+/*------health-promotion------*/
+.health-promotion__container {
+  background: url(../img/health-promotion.png) no-repeat;
+  max-width: 1296px;
+  height: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.health-promotion__title-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.health-promotion__title {
+  display: flex;
+  justify-content: center;
+  width: 429px;
+  font-family: "El Messiri";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 34px;
+  color: #ffffff;
+}
+.health-promotion__title::after {
+  content: "";
+  position: absolute;
+  top: 30%;
+  left: 0;
+  width: 28px;
+  height: 14px;
+  border-radius: 0 50% 0 50%;
+  background: #ffffff;
+}
+.health-promotion__title::before {
+  content: "";
+  position: absolute;
+  top: 30%;
+  right: 0;
+  width: 28px;
+  height: 14px;
+  border-radius: 50% 0 50% 0;
+  background: #ffffff;
+}
+.health-promotion__subtitle {
+  font-family: "El Messiri";
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 90px;
+  color: #ffffff;
+  margin: 40px 0 0 0;
+}
+/*------sessions------*/
+.sessions__container {
+  max-width: 1296px;
+  padding: 150px 0 0 0;
+  margin: 0 auto;
+}
+.sessions__title {
+  width: 482px;
+  margin: 0 0 100px 0;
+}
+.sessions__grid-body {
+  display: grid;
+  grid-template: 258px 258px / repeat(3, 1fr);
+  gap: 30px;
+}
+.grid-body__item {
+  background: url(../img/sessions.png) 50% 0 / auto 100% no-repeat;
+  border-radius: 10px;
+  display: grid;
+  align-items: flex-end;
+}
+.item-1 {
+  grid-row: 1/3;
+}
+.grid-body__title {
+  max-width: 336px;
+  font-family: "El Messiri";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 34px;
+  padding: 0 40px 30px 40px;
+  color: #ffffff;
+}
+/*-----reviews-------*/
+.reviews__container {
+  padding: 150px 0 0 0;
+}
+.reviews__title {
+  width: 300px;
+}
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+.reviews__swiper-slide {
+  border-radius: 10px;
+  background: #018abe;
+  padding: 50px 60px 56px 60px;
+}
+.reviews-card {
+  width: 516px;
+  height: 100%;
+}
+.reviews-card__title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  color: #ffffff;
+  margin: 0 0 20px 0;
+}
+.reviews-card__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.reviews-card__text-part {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+  color: #ffffff;
+}
+/*--------about-------*/
+.about__container {
+  max-width: 1296px;
+  padding: 150px 110px 0 110px;
+  margin: 0 auto;
+}
+.about__title {
+  width: 389px;
+}
+.about__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 100px 0 0 0;
+}
+.about-reverse {
+  flex-direction: row-reverse;
+}
+.about__text-card {
+  width: 466px;
+}
+.about__image {
+  width: 526px;
+  height: 365px;
+}
+.about__image img {
+  width: 100%;
+  height: 100%;
+}
+.card__title {
+  font-family: "Proxima Nova";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 34px;
+  color: #ffffff;
+  margin: 0 0 30px 0;
+}
+.card__subtitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: "Proxima Nova";
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 22px;
+  color: #ffffff;
+}
+.card__subtitle > * {
+  margin-bottom: 30px;
+}
+/*------cost-sessions------*/
+.cost-sessions__container {
+  max-width: 1296px;
+  padding: 150px 110px 0px 110px;
+  margin: 0 auto;
+}
+
+.cost-sessions__title {
+  width: 518px;
+  padding: 20px 0 50px 0;
+}
+.cost-sessions__body {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0 20px 0;
+}
+.cost-sessions__costs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.costs__card {
+  display: flex;
+  align-items: center;
+}
+.costs__card > * {
+  margin: 0 0 30px 0;
+}
+.costs__title {
+  position: relative;
+  font-family: "Proxima Nova";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #ffffff;
+  padding: 0 0 0 38px;
+  width: 268px;
+}
+.costs__title::before {
+  content: "";
+  position: absolute;
+  top: 30%;
+  left: 0;
+  width: 18px;
+  height: 9px;
+  border-radius: 0 50px 0 50px;
+  background: #018abe;
+}
+.costs__price {
+  font-family: "El Messiri";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+  color: #ffffff;
+}
+.gift-certificate__image {
+  max-width: 526px;
+  border-radius: 10px;
+}
+.gift-certificate__image img {
+  width: 100%;
+}
+.gift-certificate__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "El Messiri";
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 29px;
+  color: #ffffff;
+  margin: 30px 0 0 0;
+}
+/*--------map---------*/
+.map__container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1296px;
+  padding: 150px 0 60px 0;
+  margin: 0 auto;
+}
+.map__content {
+  width: 856px;
+  height: 604px;
+  border-radius: 10px;
+}
+.map__cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.map__card-map {
+  width: 392px;
+  height: 290px;
+  border-radius: 10px;
+  background: #018abe;
+  padding: 35px 45px 35px 45px;
+}
+.card-map__title {
+  font-family: "El Messiri";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 34px;
+  color: #ffffff;
+}
+.card-map__list > * {
+  margin: 20px 0 0 0;
+}
+.card-map__item {
+  position: relative;
+  font-family: "Proxima Nova";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+  color: #ffffff;
+  padding: 0 0 0 40px;
+}
+.address::before {
+  content: "";
+  background: url(./img/icons/address.svg) no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+}
+.metro::before {
+  content: "";
+  background: url(./img/icons/metro.svg) no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+}
+.record::before {
+  content: "";
+  background: url(./img/icons/record.svg) no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+}
+.card-map__button {
+  width: 155px;
+  height: 36px;
+  border-radius: 3px;
+  background: #ffffff;
+  font-family: "Proxima Nova";
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 18px;
+  color: #018abe;
+  margin: 30px 0 0 0;
+  cursor: pointer;
+}
+/*------footer-------*/
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1296px;
+  padding: 30px 0 30px 0;
+  margin: 0 auto;
+}
+.years {
+  font-family: "Proxima Nova";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+  color: #ffffff;
+}
+.copyright {
+  font-family: "Proxima Nova";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 19px;
+  color: #ffffff;
+}
