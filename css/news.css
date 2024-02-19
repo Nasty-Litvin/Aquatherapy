@@ -2,3 +2,53 @@
   border-bottom: 1px solid #ffffff;
   opacity: 0.5px;
 }
+.news__container {
+  max-width: 1296px;
+  padding: 60px 0 160px 0;
+  margin: 0 auto;
+}
+.news__title {
+  width: 309px;
+  margin: 0 0 60px 0;
+}
+.news__grid-body {
+  display: grid;
+  grid-template: 258px 258px / repeat(3, 1fr);
+  gap: 24px;
+}
+.grid-body__item-news {
+  display: grid;
+  background: url(../img/sessions.png) no-repeat;
+  border-radius: 10px;
+  padding: 30px 35px 30px 35px;
+}
+
+.grid-body__link-news {
+  display: grid;
+  align-content: space-between;
+
+}
+.news__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 96px;
+  height: 30px;
+  border-radius: 5px;
+  background: #018abe;
+  font-family: "Proxima Nova";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 19px;
+  color: #ffffff;
+}
+.grid-body__title {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 29px;
+  padding: 0;
+}
+.footer__container {
+  border-top: 1px solid #ffffff;
+  opacity: 0.5px;
+}
