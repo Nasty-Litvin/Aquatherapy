@@ -379,7 +379,7 @@
 }
 .address::before {
   content: "";
-  background: url(./img/icons/address.svg) no-repeat;
+  background: url(../img/icons/address.svg) no-repeat;
   position: absolute;
   top: 0;
   left: 0;
@@ -388,7 +388,7 @@
 }
 .metro::before {
   content: "";
-  background: url(./img/icons/metro.svg) no-repeat;
+  background: url(../img/icons/metro.svg) no-repeat;
   position: absolute;
   top: 0;
   left: 0;
@@ -397,7 +397,7 @@
 }
 .record::before {
   content: "";
-  background: url(./img/icons/record.svg) no-repeat;
+  background: url(../img/icons/record.svg) no-repeat;
   position: absolute;
   top: 0;
   left: 0;
